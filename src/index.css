@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     background-color: white;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -12,6 +12,9 @@ html {
     font-size: 20px;
     /*going for text visibility option instead of rendering*/
     text-rendering: optimizeLegibility;
+    /*disable scrolling to the right and left */
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .row {
@@ -20,25 +23,9 @@ html {
     margin: 0 auto 0 auto;
 }
 
-header {
-    /*seeting transperancy of image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Omnifood Contents/hero.jpg");
-    /*making image to go full width*/
-    background-size: cover;
-    /*making postion of image to go to center*/
-    background-position: center;
-    /*100% of view port*/
-    height: 100vh;
-}
 
-.hero-text-box {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-15%, -15%);
-}
 
-h1 {
-    margin: 0;
-}
+
+
+
+
